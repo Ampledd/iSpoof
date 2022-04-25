@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DEB35D8-7439-48EB-8EBA-977FA5194325}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iSpoof cracked by BomMelding#6969</RootNamespace>
+    <AssemblyName>iSpoof cracked by BomMelding#6969</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>iSpoof cracked by BomMelding#6969.ico</ApplicationIcon>
+    <StartupObject>Class0</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="CustomControls\RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\accounts.Designer.cs">
+      <DependentUpon>accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ispoof_apka\form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\form1.Designer.cs">
+      <DependentUpon>form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ispoof_apka\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ispoof_apka\KeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\KeyForm.Designer.cs">
+      <DependentUpon>KeyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ispoof_apka\Properties\Resources.cs" />
+    <Compile Include="Ispoof_apka\Properties\Settings.cs" />
+    <Compile Include="Ispoof_apka\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Ispoof_apka\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ispoof_apka\Spoofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ispoof_apka\Spoofer.Designer.cs">
+      <DependentUpon>Spoofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyAuth\api.cs" />
+    <Compile Include="KeyAuth\encryption.cs" />
+    <Compile Include="KeyAuth\json_wrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ispoof_apka\accounts.resources" />
+    <EmbeddedResource Include="Ispoof_apka\form1.resources" />
+    <EmbeddedResource Include="Ispoof_apka\Form2.resources" />
+    <EmbeddedResource Include="Ispoof_apka\KeyForm.resources" />
+    <EmbeddedResource Include="Ispoof_apka\Properties\Resources.resources" />
+    <EmbeddedResource Include="Ispoof_apka\Settings.resources" />
+    <EmbeddedResource Include="Ispoof_apka\Spoofer.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Ispoof_apka\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
